@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PatikaDevParamHafta2Odev.API.props" />
+</Project>

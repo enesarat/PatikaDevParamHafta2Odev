@@ -27,7 +27,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Business\\PatikaDevParamHafta2Odev.Business.csproj": {
+                "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Business\\PatikaDevParamHafta2Odev.Business.csproj"
+              },
+              "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +47,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -64,6 +75,196 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Business\\PatikaDevParamHafta2Odev.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Business\\PatikaDevParamHafta2Odev.Business.csproj",
+        "projectName": "PatikaDevParamHafta2Odev.Business",
+        "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Business\\PatikaDevParamHafta2Odev.Business.csproj",
+        "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj"
+              },
+              "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj": {
+                "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj",
+        "projectName": "PatikaDevParamHafta2Odev.DataAccess",
+        "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\PatikaDevParamHafta2Odev.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj": {
+                "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj",
+        "projectName": "PatikaDevParamHafta2Odev.Entity",
+        "projectPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\PatikaDevParamHafta2Odev.Entity.csproj",
+        "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enes\\source\\repos\\PatikaDevParamHafta2Odev\\PatikaDevParamHafta2Odev.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

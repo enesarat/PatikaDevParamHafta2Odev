@@ -1,0 +1,17 @@
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Business.deps.json
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Business.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Business.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.csproj.AssemblyReference.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.AssemblyInfoInputs.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.AssemblyInfo.cs
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.csproj.CoreCompileInputs.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.csproj.CopyComplete
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\refint\PatikaDevParamHafta2Odev.Business.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Business.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Business\obj\Debug\net7.0\ref\PatikaDevParamHafta2Odev.Business.dll

@@ -1,0 +1,15 @@
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.deps.json
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.AssemblyInfo.cs
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.csproj.CopyComplete
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\refint\PatikaDevParamHafta2Odev.DataAccess.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\obj\Debug\net7.0\ref\PatikaDevParamHafta2Odev.DataAccess.dll

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PatikaDevParamHafta2Odev.DataAccess\PatikaDevParamHafta2Odev.DataAccess.csproj" />
+    <ProjectReference Include="..\PatikaDevParamHafta2Odev.Entity\PatikaDevParamHafta2Odev.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

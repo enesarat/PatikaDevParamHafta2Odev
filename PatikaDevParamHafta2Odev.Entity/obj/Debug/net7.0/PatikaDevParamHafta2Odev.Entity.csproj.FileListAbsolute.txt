@@ -1,0 +1,12 @@
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.deps.json
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.csproj.AssemblyReference.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.AssemblyInfoInputs.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.AssemblyInfo.cs
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\refint\PatikaDevParamHafta2Odev.Entity.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.Entity\obj\Debug\net7.0\ref\PatikaDevParamHafta2Odev.Entity.dll

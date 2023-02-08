@@ -7,8 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PatikaDevParamHafta2Odev.Business\PatikaDevParamHafta2Odev.Business.csproj" />
+    <ProjectReference Include="..\PatikaDevParamHafta2Odev.DataAccess\PatikaDevParamHafta2Odev.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

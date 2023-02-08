@@ -31,3 +31,16 @@ C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API
 C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\obj\Debug\net7.0\PatikaDevParamHafta2Odev.API.pdb
 C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\obj\Debug\net7.0\PatikaDevParamHafta2Odev.API.genruntimeconfig.cache
 C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\obj\Debug\net7.0\ref\PatikaDevParamHafta2Odev.API.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Business.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.dll
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Business.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.pdb

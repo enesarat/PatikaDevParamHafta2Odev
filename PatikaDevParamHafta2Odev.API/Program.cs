@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseInMemoryDatabase("appDatabase");
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
 builder.Services.AddControllers(options =>
 {
@@ -26,10 +27,8 @@ builder.Services.AddControllers(options =>
 });
 builder.Services.AddControllers().AddNewtonsoftJson();
 
-builder.Services.AddScoped<IProductsService,ProductsManager>();
+builder.Services.AddScoped<IProductsService, ProductsManager>();
 builder.Services.AddScoped<IProductsDAL, EfProductsRepository>();
-
-
 
 
 var app = builder.Build();

@@ -10,10 +10,10 @@ namespace PatikaDevParamHafta2Odev.Business.Abstract
 {
     public interface IGenericService<T> where T : class, IEntity, new()
     {
-        Task<List<T>> GetAllElement();
+        Task<List<T>> GetAllElements();
         Task<T> GetElementById(int id);
         Task<T> InsertElement(T item);
         Task<T> UpdateElement(T item);
-        Task DeleteItem(int id);
+        Task<bool> DeleteItem(int id);
     }
 }

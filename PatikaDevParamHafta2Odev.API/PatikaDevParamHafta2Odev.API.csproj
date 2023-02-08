@@ -17,8 +17,4 @@
     <ProjectReference Include="..\PatikaDevParamHafta2Odev.DataAccess\PatikaDevParamHafta2Odev.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

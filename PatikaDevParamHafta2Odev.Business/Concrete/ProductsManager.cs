@@ -18,12 +18,18 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete
             this.productsAccess = productsAccess;
         }
 
-        public async Task DeleteItem(int id)
+        public async Task<bool> DeleteItem(int id)
         {
-            await productsAccess.DeleteItem(id);
+            var product = await productsAccess.GetItemById(id);
+            if (product != null)
+            {
+                await productsAccess.DeleteItem(id);
+                return true;
+            }
+            return false;
         }
 
-        public async Task<List<Product>> GetAllElement()
+        public async Task<List<Product>> GetAllElements()
         {
             var entityList = await productsAccess.GetAllItems();
             return entityList;
@@ -32,7 +38,11 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete
         public async Task<Product> GetElementById(int id)
         {
             var entity = await productsAccess.GetItemById(id);
-            return entity;
+            if (entity != null)
+            {
+                return entity;
+            }
+            return null;
         }
 
         public async Task<Product> InsertElement(Product item)
@@ -43,8 +53,13 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete
 
         public async Task<Product> UpdateElement(Product item)
         {
-            await productsAccess.UpdateItem(item);
-            return item;
+            var product = await productsAccess.GetItemById(item.Id);
+            if (product != null)
+            {
+                await productsAccess.UpdateItem(item);
+                return item;
+            }
+            return null;
         }
     }
 }

@@ -9,5 +9,6 @@ namespace PatikaDevParamHafta2Odev.DataAccess.Abstract
 {
     public interface IProductsDAL : IGenericEntityDAL<Product>
     {
+        // Extra additional method declarations here.
     }
 }

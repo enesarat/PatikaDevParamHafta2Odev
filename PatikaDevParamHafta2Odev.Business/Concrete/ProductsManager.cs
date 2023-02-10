@@ -1,4 +1,5 @@
 ﻿using PatikaDevParamHafta2Odev.Business.Abstract;
+using PatikaDevParamHafta2Odev.Business.Concrete.Extension;
 using PatikaDevParamHafta2Odev.DataAccess.Abstract;
 using PatikaDevParamHafta2Odev.Entity.Concrete.Models;
 using System;
@@ -23,8 +24,13 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete
             var product = await productsAccess.GetItemById(id);
             if (product != null)
             {
-                await productsAccess.DeleteItem(id);
-                return true;
+                if (product.IsProductAvailable()) // Custom extension method to check sale status of product.
+                {
+                    product.SaleStatus = false;               // Soft Delete
+                    await productsAccess.UpdateItem(product);//  Soft Delete
+                    //await productsAccess.DeleteItem(id);  //   Hard Delete
+                    return true;
+                }
             }
             return false;
         }
@@ -32,6 +38,7 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete
         public async Task<List<Product>> GetAllElements()
         {
             var entityList = await productsAccess.GetAllItems();
+            entityList = entityList.GetAllAvailable();
             return entityList;
         }
 
@@ -40,7 +47,10 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete
             var entity = await productsAccess.GetItemById(id);
             if (entity != null)
             {
-                return entity;
+                if (entity.IsProductAvailable()) // Custom extension method to get all product entities which available.
+                {
+                    return entity;
+                }
             }
             return null;
         }

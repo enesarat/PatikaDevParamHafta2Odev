@@ -19,7 +19,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
             _manageProducts = manageProducts;
         }
 
-        // This endpoint provides to get all data of product entity as a list.
+        
+        /// <summary>
+        /// This endpoint provides to get all data of product entity as a list.
+        /// </summary>
+        /// <returns></returns>
+        /// 
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
@@ -39,7 +44,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- GET FROM BODY ----------------------------------------------------//
-        // This endpoint provides to get the data of product which exist with given id information. (with binding over body)
+        /// <summary>
+        /// This endpoint provides to get the data of product which exist with given id information. (with binding over body)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+
         [HttpGet]
         [ActionName("GetAsync")]
         [Route("{id}")]
@@ -61,7 +71,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- GET FROM QUERY ----------------------------------------------------//
-        // This endpoint provides to get the data of product which exist according to given id information. (with binding over query string)
+        /// <summary>
+        /// This endpoint provides to get the data of product which exist according to given id information. (with binding over query string)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+
         [HttpGet]
         [Route("GetByIdFromQuery")]
         public async Task<IActionResult> GetAsync([FromQuery] int id)
@@ -82,7 +97,16 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- FILTER FROM BODY ----------------------------------------------------//
-        // This endpoint provides to get the data of product which exist according to given properties as filtered list. (with binding over body)
+        /// <summary>
+        /// This endpoint provides to get the data of product which exist according to given properties as filtered list. (with binding over body)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="categoryName"></param>
+        /// <param name="price"></param>
+        /// <param name="quantity"></param>
+        /// <param name="saleStatus"></param>
+        /// <returns></returns>
+        
         [HttpGet]
         [Route("{name}/{saleStatus}")]
         public async Task<IActionResult> GetAsync(string name, string categoryName, int price, int quantity, bool saleStatus)
@@ -117,7 +141,16 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- FILTER FROM QUERY ----------------------------------------------------//
-        // This endpoint provides to get the data of product which exist according to given properties as filtered list. (with binding over query string)
+        /// <summary>
+        /// This endpoint provides to get the data of product which exist according to given properties as filtered list. (with binding over query string)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="categoryName"></param>
+        /// <param name="price"></param>
+        /// <param name="quantity"></param>
+        /// <param name="saleStatus"></param>
+        /// <returns></returns>
+        
         [HttpGet]
         [Route("GetByFilterFromQuery")]
         public async Task<IActionResult> GetByFilterAsync([FromQuery] string name, [FromQuery] string categoryName, [FromQuery] int price, [FromQuery] int quantity, [FromQuery] bool saleStatus)
@@ -152,7 +185,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- CREATE FROM BODY ----------------------------------------------------//
-        // This endpoint provides to create a record of product according to given properties. (with binding over body)
+        /// <summary>
+        /// This endpoint provides to create a record of product according to given properties. (with binding over body)
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] Product product)
         {
@@ -173,7 +211,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- CREATE FROM QUERY ----------------------------------------------------//
-        // This endpoint provides to create a record of product according to given properties. (with binding over query string)
+        /// <summary>
+        /// This endpoint provides to create a record of product according to given properties. (with binding over query string)
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        
         [HttpPost]
         [Route("CreateFromQuery")]
 
@@ -196,7 +239,13 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- UPDATE FROM BODY ----------------------------------------------------//
-        // This endpoint provides to update the record of product according to given id which exist with given product data. (with binding over body)
+        /// <summary>
+        /// This endpoint provides to update the record of product according to given id which exist with given product data. (with binding over body)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        
         [HttpPut]
         [Route("{id}")]
         public async Task<IActionResult> UpdateAsync([FromRoute] int id, [FromBody] Product product)
@@ -218,7 +267,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- UPDATE FROM QUERY ----------------------------------------------------//
-        // This endpoint provides to update the record of product according to given id which exist with given product data. (with binding over query string)
+        /// <summary>
+        /// This endpoint provides to update the record of product according to given id which exist with given product data. (with binding over query string)
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        
         [HttpPut]
         [Route("UpdateFromQuery")]
         public async Task<IActionResult> UpdateFromQueryAsync([FromQuery] Product product)
@@ -240,7 +294,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- DELETE FROM BODY ----------------------------------------------------//
-        // This endpoint provides to delete the record of product according to given id which exist with given product data. (with binding over body)
+        /// <summary>
+        /// This endpoint provides to delete the record of product according to given id which exist with given product data. (with binding over body)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
@@ -251,7 +310,7 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
                 {
                     return Ok(); // 200
                 }
-                return BadRequest(); // 400
+                return NotFound(); // 404
             }
             catch (Exception exp)
             {
@@ -261,7 +320,12 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- DELETE FROM QUERY ----------------------------------------------------//
-        // This endpoint provides to delete the record of product according to given id which exist with given product data. (with binding over query string)
+        /// <summary>
+        /// This endpoint provides to delete the record of product according to given id which exist with given product data. (with binding over query string)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        
         [HttpDelete]
         [Route("DeleteFromQuery")]
         public async Task<IActionResult> DeleteFromQueryAsync([FromQuery] int id)
@@ -272,7 +336,7 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
                 {
                     return Ok(); // 200
                 }
-                return BadRequest(); // 400
+                return NotFound(); // 404
             }
             catch (Exception exp)
             {
@@ -282,7 +346,13 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- PATCH FROM BODY ----------------------------------------------------//
-        // This endpoint provides to patch(to local update in this endpoint) the record of product according to given id which exist with given product data. (with binding over body)
+        /// <summary>
+        /// This endpoint provides to patch(to local update in this endpoint) the record of product according to given id which exist with given product data. (with binding over body)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="patchDocument"></param>
+        /// <returns></returns>
+        
         [HttpPatch]
         [Route("{id}")]
         public async Task<IActionResult> PatchAsync(int id, [FromBody] JsonPatchDocument<Product> patchDocument)
@@ -317,7 +387,13 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         }
 
         //-------------------------------------------------------------------- PATCH FROM QUERY ----------------------------------------------------//
-        // This endpoint provides to patch(to local update in this endpoint) the record of product according to given id which exist with given product data. (with binding over query string)
+        /// <summary>
+        /// This endpoint provides to patch(to local update in this endpoint) the record of product according to given id which exist with given product data. (with binding over query string)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="patchDocument"></param>
+        /// <returns></returns>
+        
         [HttpPatch]
         [Route("PatchFromQuery")]
         public async Task<IActionResult> PatchFromQueryAsync([FromQuery] int id, [FromQuery] JsonPatchDocument<Product> patchDocument)

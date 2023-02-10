@@ -28,7 +28,7 @@ options) : base(options)
                     Description = "40g chocolate covered wafers",
                     Quantity = 100,
                     Price = 5,
-                    SaleStatus = false
+                    SaleStatus = true
                 },
                 new Product()
                 {
@@ -58,7 +58,7 @@ options) : base(options)
                     Description = "80g tomato paste",
                     Quantity = 100,
                     Price = 20,
-                    SaleStatus = false
+                    SaleStatus = true
                 }
                 );
         }

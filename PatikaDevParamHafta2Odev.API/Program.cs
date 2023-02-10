@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using PatikaDevParamHafta2Odev.API.Helper;
 using PatikaDevParamHafta2Odev.Business.Abstract;
 using PatikaDevParamHafta2Odev.Business.Concrete;
@@ -6,6 +7,7 @@ using PatikaDevParamHafta2Odev.DataAccess.Abstract;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.Context;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.EntityFramework;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.Repository;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +16,22 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "1.0.0",
+        Title = "PatikaDev & Param RESTful API",
+        Contact = new OpenApiContact
+        {
+            Name = "Enes Arat",
+            Url = new Uri("https://github.com/enesarat"),
+            Email = "enes_arat@outlook.com"
+        },
+    });
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+});
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

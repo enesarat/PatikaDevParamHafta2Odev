@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PatikaDevParamHafta2Odev.API</name>
+    </assembly>
+    <members>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.GetAllAsync">
+            <summary>
+            This endpoint provides to get all data of product entity as a list.
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.GetByIdAsync(System.Int32)">
+            <summary>
+            This endpoint provides to get the data of product which exist with given id information. (with binding over body)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.GetAsync(System.Int32)">
+            <summary>
+            This endpoint provides to get the data of product which exist according to given id information. (with binding over query string)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.GetAsync(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            This endpoint provides to get the data of product which exist according to given properties as filtered list. (with binding over body)
+            </summary>
+            <param name="name"></param>
+            <param name="categoryName"></param>
+            <param name="price"></param>
+            <param name="quantity"></param>
+            <param name="saleStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.GetByFilterAsync(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            This endpoint provides to get the data of product which exist according to given properties as filtered list. (with binding over query string)
+            </summary>
+            <param name="name"></param>
+            <param name="categoryName"></param>
+            <param name="price"></param>
+            <param name="quantity"></param>
+            <param name="saleStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.CreateAsync(PatikaDevParamHafta2Odev.Entity.Concrete.Models.Product)">
+            <summary>
+            This endpoint provides to create a record of product according to given properties. (with binding over body)
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.CreateFromQueryAsync(PatikaDevParamHafta2Odev.Entity.Concrete.Models.Product)">
+            <summary>
+            This endpoint provides to create a record of product according to given properties. (with binding over query string)
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.UpdateAsync(System.Int32,PatikaDevParamHafta2Odev.Entity.Concrete.Models.Product)">
+            <summary>
+            This endpoint provides to update the record of product according to given id which exist with given product data. (with binding over body)
+            </summary>
+            <param name="id"></param>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.UpdateFromQueryAsync(PatikaDevParamHafta2Odev.Entity.Concrete.Models.Product)">
+            <summary>
+            This endpoint provides to update the record of product according to given id which exist with given product data. (with binding over query string)
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.DeleteAsync(System.Int32)">
+            <summary>
+            This endpoint provides to delete the record of product according to given id which exist with given product data. (with binding over body)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.DeleteFromQueryAsync(System.Int32)">
+            <summary>
+            This endpoint provides to delete the record of product according to given id which exist with given product data. (with binding over query string)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.PatchAsync(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{PatikaDevParamHafta2Odev.Entity.Concrete.Models.Product})">
+            <summary>
+            This endpoint provides to patch(to local update in this endpoint) the record of product according to given id which exist with given product data. (with binding over body)
+            </summary>
+            <param name="id"></param>
+            <param name="patchDocument"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatikaDevParamHafta2Odev.API.Controllers.ProductsController.PatchFromQueryAsync(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{PatikaDevParamHafta2Odev.Entity.Concrete.Models.Product})">
+            <summary>
+            This endpoint provides to patch(to local update in this endpoint) the record of product according to given id which exist with given product data. (with binding over query string)
+            </summary>
+            <param name="id"></param>
+            <param name="patchDocument"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

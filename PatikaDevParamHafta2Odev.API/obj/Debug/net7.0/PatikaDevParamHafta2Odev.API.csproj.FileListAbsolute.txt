@@ -44,3 +44,5 @@ C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API
 C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Business.pdb
 C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.DataAccess.pdb
 C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.Entity.pdb
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\bin\Debug\net7.0\PatikaDevParamHafta2Odev.API.xml
+C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.API\obj\Debug\net7.0\PatikaDevParamHafta2Odev.API.xml

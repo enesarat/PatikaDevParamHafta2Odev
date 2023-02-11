@@ -32,24 +32,20 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
-            _logger.LogInformation("GetAllAsync endpoint was started.");
             try
             {
                 var products = await _manageProducts.GetAllElements();
                 if (products != null)
                 {
                     _logger.LogInformation($"{products.Count} products were successfully returned with the response.");
-                    _logger.LogInformation("GettAllAsync endpoint was ended.");
                     return Ok(products); // 200 + data
                 }
                 _logger.LogInformation("No products found!");
-                _logger.LogInformation("GettAllAsync endpoint was ended.");
                 return NotFound(); // 404
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("GettAllAsync endpoint was ended.");
                 return BadRequest(exp.Message);
             }
         }
@@ -66,24 +62,20 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         [Route("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
-            _logger.LogInformation("GetByIdAsync endpoint was started.");
             try
             {
                 var product = await _manageProducts.GetElementById(id);
                 if (product != null)
                 {
                     _logger.LogInformation($"Product which has id:{product.Id} were successfully returned with the response.");
-                    _logger.LogInformation("GetByIdAsync endpoint was ended.");
                     return Ok(product); // 200 + data
                 }
                 _logger.LogInformation("No product found!");
-                _logger.LogInformation("GetByIdAsync endpoint was ended.");
                 return NotFound(); // 404
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("GetByIdAsync endpoint was ended.");
                 return BadRequest(exp.Message);
             }
         }
@@ -127,9 +119,9 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         
         [HttpGet]
         [Route("{name}/{saleStatus}")]
+        [ActionName("GetByFilter")]
         public async Task<IActionResult> GetAsync(string name, string categoryName, int price, int quantity, bool saleStatus)
         {
-            _logger.LogInformation("GetAsyncWithFilter endpoint was started.");
             try
             {
                 List<Product> products = await _manageProducts.GetAllElements();
@@ -150,14 +142,13 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
                     products = products.Where(x => x.Quantity == quantity).ToList();
                 }
                 products = products.Where(x => x.SaleStatus == saleStatus).ToList();
+                
                 _logger.LogInformation($"{products.Count} products were successfully returned with the response.");
-                _logger.LogInformation("GetAsyncWithFilter endpoint was ended successfully.");             
                 return Ok(products);
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("GetAsyncWithFilter endpoint was ended.");
                 return BadRequest(exp.Message);
             }
         }
@@ -216,24 +207,20 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] Product product)
         {
-            _logger.LogInformation("CreateAsync endpoint was started.");
             try
             {
                 if (ModelState.IsValid)
                 {
                     await _manageProducts.InsertElement(product);
                     _logger.LogInformation($"Product was created with id:{product.Id}");
-                    _logger.LogInformation("CreateAsync endpoint was ended.");
                     return CreatedAtAction(nameof(GetAsync), new { id = product.Id }, product); // 201 + data + header info for data location
                 }
                 _logger.LogError($"Create product fail:{ModelState}");
-                _logger.LogInformation("CreateAsync endpoint was ended.");
                 return BadRequest(ModelState); // 400
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("CreateAsync endpoint was ended.");
                 return BadRequest(exp.Message);
             }
 
@@ -279,24 +266,20 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         [Route("{id}")]
         public async Task<IActionResult> UpdateAsync([FromRoute] int id, [FromBody] Product product)
         {
-            _logger.LogInformation("UpdateAsync endpoint was started.");
             try
             {
                 product.Id = id;
                 if (await _manageProducts.UpdateElement(product) != null)
                 {
                     _logger.LogInformation("Product updated succesfully.");
-                    _logger.LogInformation("UpdateAsync endpoint was ended.");
                     return Ok(product); // 200 + data
                 }
                 _logger.LogInformation("No products found to update!");
-                _logger.LogInformation("UpdateAsync endpoint was ended.");
                 return NotFound(); // 404 
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("UpdateAsync endpoint was ended.");
                 return BadRequest(exp.Message);
             }
 
@@ -340,23 +323,19 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         [Route("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            _logger.LogInformation("DeleteAsync endpoint was started.");
             try
             {
                 if (await _manageProducts.DeleteItem(id))
                 {
                     _logger.LogInformation("Product deleted succesfully.");
-                    _logger.LogInformation("DeleteAsync endpoint was ended.");
                     return Ok(); // 200
                 }
                 _logger.LogInformation("No products found to delete!");
-                _logger.LogInformation("DeleteAsync endpoint was ended.");
                 return NotFound(); // 404
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("DeleteAsync endpoint was ended.");
                 return BadRequest(exp.Message);
             }
 
@@ -400,12 +379,11 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         [Route("{id}")]
         public async Task<IActionResult> PatchAsync(int id, [FromBody] JsonPatchDocument<Product> patchDocument)
         {
-            _logger.LogInformation("PatchAsync endpoint was started.");
             try
             {
                 if (patchDocument == null)
                 {
-                    _logger.LogInformation("PatchAsync endpoint was ended. (patchDocument is null)");
+                    _logger.LogInformation("patchDocument is null!");
                     return BadRequest(ModelState);
                 }
 
@@ -413,7 +391,6 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
                 if (await _manageProducts.GetElementById(id) == null)
                 {
                     _logger.LogInformation("No products found to patch!");
-                    _logger.LogInformation("PatchAsync endpoint was ended.");
                     return NotFound();
                 }
 
@@ -422,17 +399,15 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
                 if (ModelState.IsValid)
                 {
                     _logger.LogInformation("Product patched succesfully.");
-                    _logger.LogInformation("PatchAsync endpoint was ended.");
                     await _manageProducts.UpdateElement(product);
                     return Ok(product);
                 }
-                _logger.LogInformation($"PatchAsync endpoint was ended. (ModelState is not valid!)");
+                _logger.LogInformation("ModelState is not valid!");
                 return BadRequest(ModelState);
             }
             catch (Exception exp)
             {
                 _logger.LogError(exp.Message);
-                _logger.LogInformation("PatchAsync endpoint was ended.");
                 return BadRequest(exp.Message);
             }
         }

@@ -15,6 +15,7 @@ using Serilog.Core;
 using Serilog.Events;
 using Serilog.Formatting.Json;
 using Microsoft.Extensions.Configuration;
+using PatikaDevParamHafta2Odev.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -78,9 +79,6 @@ Log.CloseAndFlush();
 //-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 
-
-
-
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -101,5 +99,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCustomLogger(); // Middleware call to use on action based logging management.
 
 app.Run();

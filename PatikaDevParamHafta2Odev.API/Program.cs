@@ -7,7 +7,14 @@ using PatikaDevParamHafta2Odev.DataAccess.Abstract;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.Context;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.EntityFramework;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.Repository;
+using Serilog.Events;
+using Serilog.Formatting.Json;
+using Serilog;
 using System.Reflection;
+using Serilog.Core;
+using Serilog.Events;
+using Serilog.Formatting.Json;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +23,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -38,6 +46,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase("appDatabase");
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
+
 builder.Services.AddControllers(options =>
 {
     options.InputFormatters.Insert(0, MyJPIF.GetJsonPatchInputFormatter());
@@ -46,6 +55,30 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 
 builder.Services.AddScoped<IProductsService, ProductsManager>();
 builder.Services.AddScoped<IProductsDAL, EfProductsRepository>();
+
+
+//-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --LOGGER CONFIGURATION
+var logger = new LoggerConfiguration()
+// Read from appsettings.json
+    .ReadFrom.Configuration(builder.Configuration)
+    .WriteTo.File(new JsonFormatter(),
+        "Logs/important-logs.json",
+        restrictedToMinimumLevel: LogEventLevel.Warning)
+    .WriteTo.File(new JsonFormatter(),
+        "Logs/information-logs.json",
+        restrictedToMinimumLevel: LogEventLevel.Information)
+    // Create the actual logger
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger); builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
+
+Log.CloseAndFlush();
+//-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+
+
 
 
 var app = builder.Build();

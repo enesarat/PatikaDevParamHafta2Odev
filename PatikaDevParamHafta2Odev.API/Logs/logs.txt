@@ -1,0 +1,43 @@
+[20:06:13 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAllAsync endpoint was started.
+[20:06:13 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[20:06:13 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GettAllAsync endpoint was ended.
+[20:06:19 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was started.
+[20:06:20 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product which has id:2 were successfully returned with the response.
+[20:06:20 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was ended.
+[20:06:24 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was started.
+[20:06:24 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] No product found!
+[20:06:24 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was ended.
+[20:14:13 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was started.
+[20:14:13 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product which has id:1 were successfully returned with the response.
+[20:14:13 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was ended.
+[20:14:18 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was started.
+[20:14:18 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] No product found!
+[20:14:18 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetByIdAsync endpoint was ended.
+[20:15:30 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAllAsync endpoint was started.
+[20:15:30 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[20:15:30 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GettAllAsync endpoint was ended.
+[20:15:50 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAsyncWithFilter endpoint was started.
+[20:15:50 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 1 products were successfully returned with the response.
+[20:15:50 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAsyncWithFilter endpoint was ended successfully.
+[20:39:26 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAsyncWithFilter endpoint was started.
+[20:39:26 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 2 products were successfully returned with the response.
+[20:39:26 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAsyncWithFilter endpoint was ended successfully.
+[20:39:47 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] No products found to patch!
+[20:39:47 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] PatchAsync endpoint was ended.
+[20:40:07 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] CreateAsync endpoint was started.
+[20:40:07 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product was created with id:5
+[20:40:07 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] CreateAsync endpoint was ended.
+[20:40:36 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product patched succesfully.
+[20:40:36 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] PatchAsync endpoint was ended.
+[20:40:43 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAllAsync endpoint was started.
+[20:40:43 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 5 products were successfully returned with the response.
+[20:40:43 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GettAllAsync endpoint was ended.
+[20:42:51 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAllAsync endpoint was started.
+[20:42:51 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[20:42:51 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GettAllAsync endpoint was ended.
+[20:42:57 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] DeleteAsync endpoint was started.
+[20:42:57 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product deleted succesfully.
+[20:42:57 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] DeleteAsync endpoint was ended.
+[20:43:04 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GetAllAsync endpoint was started.
+[20:43:04 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 3 products were successfully returned with the response.
+[20:43:04 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] GettAllAsync endpoint was ended.

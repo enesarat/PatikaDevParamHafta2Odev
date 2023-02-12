@@ -1,6 +1,6 @@
 ﻿using PatikaDevParamHafta2Odev.Business.Abstract;
-using PatikaDevParamHafta2Odev.Business.Concrete.Extension;
 using PatikaDevParamHafta2Odev.DataAccess.Abstract;
+using PatikaDevParamHafta2Odev.DataAccess.Concrete.Extensions;
 using PatikaDevParamHafta2Odev.Entity.Concrete.Models;
 using System;
 using System.Collections.Generic;

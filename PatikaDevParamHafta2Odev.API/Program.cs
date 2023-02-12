@@ -15,7 +15,9 @@ using Serilog.Core;
 using Serilog.Events;
 using Serilog.Formatting.Json;
 using Microsoft.Extensions.Configuration;
-using PatikaDevParamHafta2Odev.API.Middlewares;
+using PatikaDevParamHafta2Odev.DataAccess.Concrete.Extensions;
+using Microsoft.AspNetCore.HttpsPolicy;
+using PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,7 +58,7 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 
 builder.Services.AddScoped<IProductsService, ProductsManager>();
 builder.Services.AddScoped<IProductsDAL, EfProductsRepository>();
-
+builder.Services.AddTransient<CustomExceptionMiddleware>();
 
 //-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --LOGGER CONFIGURATION
 var logger = new LoggerConfiguration()
@@ -101,5 +103,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseCustomLogger(); // Middleware call to use on action based logging management.
+app.UseCustomExceptionHandler(); // Middleware call to use on exception handling.
 
 app.Run();

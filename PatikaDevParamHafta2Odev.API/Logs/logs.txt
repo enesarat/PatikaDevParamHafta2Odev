@@ -52,3 +52,104 @@
 [23:48:44 PatikaDevParamHafta2Odev.API.Middlewares.CustomLoggerMiddleware [Information] GetByFilter endpoint was ended.
 [23:48:54 PatikaDevParamHafta2Odev.API.Middlewares.CustomLoggerMiddleware [Information] GetByFilter endpoint was started.
 [23:48:54 PatikaDevParamHafta2Odev.API.Middlewares.CustomLoggerMiddleware [Information] GetByFilter endpoint was ended.
+[16:16:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[16:16:42 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[16:16:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[16:16:48 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Create endpoint was started.
+[16:16:48 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product was created with id:5
+[16:16:48 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Create endpoint was ended.
+[16:16:57 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was started.
+[16:16:57 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product which has id:5 were successfully returned with the response.
+[16:16:57 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was ended.
+[16:17:11 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was started.
+[16:17:11 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product updated succesfully.
+[16:17:11 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was ended.
+[16:17:50 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was started.
+[16:17:50 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was ended.
+[16:18:12 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was started.
+[16:18:12 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product patched succesfully.
+[16:18:12 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was ended.
+[16:18:22 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[16:18:22 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 5 products were successfully returned with the response.
+[16:18:22 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[16:18:34 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Delete endpoint was started.
+[16:18:34 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product deleted succesfully.
+[16:18:34 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Delete endpoint was ended.
+[16:18:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[16:18:42 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[16:18:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[17:20:27 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was started.
+[17:20:27 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware.Invoke(HttpContext context) in C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\Concrete\Middlewares\CustomLoggerMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:23:02 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[17:23:02 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware.Invoke(HttpContext context) in C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\Concrete\Middlewares\CustomLoggerMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:26:05 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[17:26:05 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Http.RequestDelegate' while attempting to Invoke middleware 'PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware'.
+   at lambda_method71(Closure, Object, HttpContext, IServiceProvider)
+   at PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware.Invoke(HttpContext context) in C:\Users\Enes\source\repos\PatikaDevParamHafta2Odev\PatikaDevParamHafta2Odev.DataAccess\Concrete\Middlewares\CustomLoggerMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:28:29 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[17:28:29 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[17:28:30 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[17:28:38 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Create endpoint was started.
+[17:28:38 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product was created with id:5
+[17:28:38 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Create endpoint was ended.
+[17:28:46 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was started.
+[17:28:46 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product which has id:5 were successfully returned with the response.
+[17:28:46 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was ended.
+[17:29:07 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was started.
+[17:29:07 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product updated succesfully.
+[17:29:07 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was ended.
+[17:29:50 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was started.
+[17:29:50 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product patched succesfully.
+[17:29:50 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was ended.
+[17:30:05 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetByFilter endpoint was started.
+[17:30:05 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 1 products were successfully returned with the response.
+[17:30:05 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetByFilter endpoint was ended.
+[17:30:17 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[17:30:17 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 5 products were successfully returned with the response.
+[17:30:17 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[17:30:32 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Delete endpoint was started.
+[17:30:32 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product deleted succesfully.
+[17:30:32 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Delete endpoint was ended.
+[17:30:37 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[17:30:37 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[17:30:37 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[17:31:33 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was started.
+[17:31:33 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Error] Any entity from the database with ID: 5 could not be found.
+[17:31:33 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was ended.
+[17:31:51 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Delete endpoint was started.
+[17:31:51 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Error] Any entity from the database with ID: 5 could not be found.
+[17:31:51 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Delete endpoint was ended.
+[17:32:26 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was started.
+[17:32:27 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Error] Any entity from the database with ID: 5 could not be found.
+[17:32:27 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Patch endpoint was ended.
+[17:32:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was started.
+[17:32:42 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Error] Any entity from the database with ID: 5 could not be found.
+[17:32:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was ended.

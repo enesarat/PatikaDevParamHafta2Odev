@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PatikaDevParamHafta2Odev.DataAccess.Abstract;
 using PatikaDevParamHafta2Odev.DataAccess.Concrete.Context;
+using PatikaDevParamHafta2Odev.DataAccess.Concrete.Exceptions;
 using PatikaDevParamHafta2Odev.Entity.Abstract;
 using System;
 using System.Collections.Generic;
@@ -29,28 +30,32 @@ namespace PatikaDevParamHafta2Odev.DataAccess.Concrete.Repository
 
         public async Task<List<T>> GetAllItems()
         {
-                var itemList = await _appDbContext.Set<T>().ToListAsync();
-                return itemList;
+            var itemList = await _appDbContext.Set<T>().ToListAsync();
+            return itemList;
         }
 
         public async Task<T> GetItemById(int id)
         {
-                var item = await _appDbContext.Set<T>().FindAsync(id);
-                return item;
+            var item = await _appDbContext.Set<T>().FindAsync(id);
+            if(item == null)
+            {
+                throw new NotFoundException($"Any entity from the database with ID: {id} could not be found.");
+            }
+            return item;
         }
 
         public async Task<T> InsertItem(T item)
         {
-                await _appDbContext.Set<T>().AddAsync(item);
-                await _appDbContext.SaveChangesAsync();
-                return item;
+            await _appDbContext.Set<T>().AddAsync(item);
+            await _appDbContext.SaveChangesAsync();
+            return item;
         }
 
         public async Task<T> UpdateItem(T item)
         {
-                _appDbContext.Set<T>().Update(item);
-                await _appDbContext.SaveChangesAsync();
-                return item;
+            _appDbContext.Set<T>().Update(item);
+            await _appDbContext.SaveChangesAsync();
+            return item;
         }
     }
 }

@@ -1,11 +1,12 @@
-﻿using PatikaDevParamHafta2Odev.Entity.Concrete.Models;
+﻿using PatikaDevParamHafta2Odev.DataAccess.Concrete.Extensions;
+using PatikaDevParamHafta2Odev.Entity.Concrete.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatikaDevParamHafta2Odev.Business.Concrete.Extension
+namespace PatikaDevParamHafta2Odev.DataAccess.Concrete.Extensions
 {
     public static class ProductsExtensions
     {
@@ -23,7 +24,7 @@ namespace PatikaDevParamHafta2Odev.Business.Concrete.Extension
             List<Product> availableList = new List<Product>();
             foreach (var product in products)
             {
-                if (product.IsProductAvailable()) 
+                if (product.IsProductAvailable())
                 {
                     availableList.Add(product);
                 }

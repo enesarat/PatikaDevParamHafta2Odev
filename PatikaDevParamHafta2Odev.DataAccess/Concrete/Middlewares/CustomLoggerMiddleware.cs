@@ -1,5 +1,8 @@
-﻿namespace PatikaDevParamHafta2Odev.API.Middlewares
-{
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+
+namespace PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares
+{ 
     public class CustomLoggerMiddleware
     {
         private readonly RequestDelegate _next;

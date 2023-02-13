@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -29,7 +30,7 @@ namespace PatikaDevParamHafta2Odev.API.Controllers
         /// </summary>
         /// <returns></returns>
         /// 
-        [HttpGet]
+        [HttpGet,Authorize]
         public async Task<IActionResult> GetAllAsync()
         {
             try

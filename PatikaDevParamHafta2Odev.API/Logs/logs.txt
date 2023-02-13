@@ -153,3 +153,89 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 [17:32:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was started.
 [17:32:42 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Error] Any entity from the database with ID: 5 could not be found.
 [17:32:42 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Update endpoint was ended.
+[19:56:56 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was started.
+[19:56:56 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product which has id:1 were successfully returned with the response.
+[19:56:56 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was ended.
+[01:36:28 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[01:36:28 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] ErrorId
+[01:36:29 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] StackTrace
+[01:36:29 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] Cannot create a DbSet for 'IdentityUser' because this type is not included in the model for the context. Request failed with Status Code 200 and Error Id 086485e9-e3e7-4f01-a55f-f960439a3389.
+[01:36:29 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[01:44:08 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[01:44:08 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] ErrorId
+[01:44:08 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] StackTrace
+[01:44:08 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] Cannot create a DbSet for 'IdentityUser' because this type is not included in the model for the context. Request failed with Status Code 200 and Error Id a5de7813-2e9b-4dcb-a99f-d3f31d662fe6.
+[01:44:08 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[01:44:44 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[01:44:45 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] ErrorId
+[01:44:45 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] StackTrace
+[01:44:45 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] Cannot create a DbSet for 'IdentityUser' because this type is not included in the model for the context. Request failed with Status Code 200 and Error Id 0e0a00c8-5b6a-4ff5-b46e-22472e5a21ea.
+[01:44:45 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[02:04:20 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[02:04:20 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] ErrorId
+[02:04:21 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] StackTrace
+[02:04:21 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] The entity type 'IdentityUserLogin<string>' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943. Request failed with Status Code 200 and Error Id 4e18b363-d4be-41b5-8f6c-9072d669a429.
+[02:04:21 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[02:07:51 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[02:07:52 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[02:08:19 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[02:08:20 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[14:00:41 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[14:00:41 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[14:01:33 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[14:01:34 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[14:02:31 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[14:02:32 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[14:48:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[14:48:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] ErrorId
+[14:48:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] StackTrace
+[14:48:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext. Request failed with Status Code 200 and Error Id e56d251f-3b74-40b9-afb6-37bf5806017e.
+[14:48:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[14:57:09 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[14:57:10 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:00:08 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:00:09 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:00:40 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[15:00:40 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[15:01:04 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:01:05 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:02:11 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:02:11 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:02:21 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:02:21 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:04:54 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[15:04:55 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[15:05:22 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:05:22 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:12:31 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[15:12:31 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] ErrorId
+[15:12:31 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] StackTrace
+[15:12:31 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomExceptionMiddleware [Error] No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext. Request failed with Status Code 200 and Error Id 8053603d-410e-4b2f-99da-249f96108be8.
+[15:12:31 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[15:30:35 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[15:30:36 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[15:30:59 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:31:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:36:33 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[15:36:34 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[15:36:50 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:36:51 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:45:43 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was started.
+[15:45:44 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Register endpoint was ended.
+[15:46:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was started.
+[15:46:00 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Authenticate endpoint was ended.
+[15:46:24 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[15:46:24 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[15:46:24 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[15:46:54 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[15:46:54 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 4 products were successfully returned with the response.
+[15:46:54 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.
+[15:47:02 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was started.
+[15:47:02 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product which has id:1 were successfully returned with the response.
+[15:47:02 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAsync endpoint was ended.
+[15:47:09 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Create endpoint was started.
+[15:47:09 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] Product was created with id:5
+[15:47:09 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] Create endpoint was ended.
+[15:47:16 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was started.
+[15:47:16 PatikaDevParamHafta2Odev.API.Controllers.ProductsController [Information] 5 products were successfully returned with the response.
+[15:47:16 PatikaDevParamHafta2Odev.DataAccess.Concrete.Middlewares.CustomLoggerMiddleware [Information] GetAll endpoint was ended.

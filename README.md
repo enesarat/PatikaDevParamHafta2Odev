@@ -1,6 +1,6 @@
 # Restful Api Development Task
 
- -    It has been progressed by refactoring and developing on the api in its [repo]([https://www.gooogle.com](https://github.com/enesarat/PatikaDevParamHafta1Odev))
+ -    It has been progressed by refactoring and developing on the api in its [repo](https://github.com/enesarat/PatikaDevParamHafta1Odev)
  -    It must comply with the rest standards.
  -    Solid principles must be followed.
  -    Dependency injection should be used by developing fake services.
